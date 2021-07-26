@@ -3,7 +3,7 @@ local copyDeep = require(List.copyDeep)
 
 local Llama = List.Parent
 local None = require(Llama.None)
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local validate = t.table
 

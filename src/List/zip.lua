@@ -1,7 +1,7 @@
 local List = script.Parent
 
 local Llama = List.Parent
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local validate = t.table
 
@@ -33,7 +33,7 @@ local function zip(...)
 
 	for i = 1, minLen do
 		new[i] = {}
-		
+
 		for j = 1, argCount do
 			new[i][j] = select(j, ...)[i]
 		end

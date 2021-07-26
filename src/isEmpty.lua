@@ -1,5 +1,5 @@
 local Llama = script.Parent
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local validate = t.table
 

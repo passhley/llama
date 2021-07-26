@@ -2,13 +2,13 @@ local Dictionary = script.Parent
 local copy = require(Dictionary.copy)
 
 local Llama = Dictionary.Parent
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local validate = t.table
 
 local function removeKeys(dictionary, ...)
 	assert(validate(dictionary))
-	
+
 	local new = copy(dictionary)
 
 	for i = 1, select('#', ...) do

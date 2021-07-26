@@ -2,7 +2,7 @@ local List = script.Parent
 local copy = require(List.copy)
 
 local Llama = List.Parent
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local function noUpdate(value)
 	return value

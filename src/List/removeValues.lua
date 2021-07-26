@@ -2,7 +2,7 @@ local List = script.Parent
 local toSet = require(List.toSet)
 
 local Llama = List.Parent
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local validate = t.table
 
