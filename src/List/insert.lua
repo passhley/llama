@@ -1,7 +1,7 @@
 local List = script.Parent
 
 local Llama = List.Parent
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local validate = t.tuple(t.table, t.optional(t.integer))
 
@@ -18,7 +18,7 @@ local function insert(list, index, ...)
 
 	local new = {}
 	local resultIndex = 1
-	
+
 	for i = 1, len do
 		if i == index then
 			for j = 1, select('#', ...) do
@@ -26,7 +26,7 @@ local function insert(list, index, ...)
 				resultIndex = resultIndex + 1
 			end
 		end
-		
+
 		new[resultIndex] = list[i]
 		resultIndex = resultIndex + 1
 	end

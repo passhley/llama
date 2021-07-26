@@ -3,7 +3,7 @@ local copyDeep = require(Dictionary.copyDeep)
 
 local Llama = Dictionary.Parent
 local None = require(script.Parent.Parent.None)
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local validate = t.table
 

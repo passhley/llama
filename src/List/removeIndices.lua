@@ -1,7 +1,7 @@
 local List = script.Parent
 
 local Llama = List.Parent
-local t = require(Llama.t)
+local t = require(LLama.Parent.t)
 
 local validateList = t.table
 local validateIndex = t.integer
@@ -14,7 +14,7 @@ local function removeIndices(list, ...)
 
 	for i = 1, select('#', ...) do
 		local index = select(i, ...)
-		
+
 		assert(validateIndex(index))
 
 		if index < 1 then
@@ -25,7 +25,7 @@ local function removeIndices(list, ...)
 
 		indicesToRemove[index] = true
 	end
-	
+
 	local new = {}
 	local index = 1
 
